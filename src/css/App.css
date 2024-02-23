@@ -69,3 +69,7 @@ button {
   margin: 0;
   cursor: pointer;
 }
+
+button:focus {
+  outline-color: var(--primary);
+}

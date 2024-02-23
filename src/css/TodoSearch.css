@@ -1,10 +1,14 @@
 input,
 textarea {
   border: none;
-  outline: none; /* Quita el contorno al hacer clic */
   padding: 16px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--primary);
 }
 
 input::placeholder {
