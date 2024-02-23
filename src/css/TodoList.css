@@ -1,0 +1,36 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.todo-item {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 16px;
+}
+
+.todo-item.unchecked::before {
+  content: url("../assets/icons/ico-unchecked.svg");
+  position: relative;
+  top: 2px;
+}
+
+.todo-item p {
+  flex-grow: 1; /* El texto ocupa el espacio disponible */
+}
+
+.btn-delete {
+  margin-left: auto; /* El botón se alinea a la derecha */
+}
+
+.btn-delete {
+  background-image: url("../assets/icons/ico-delete.svg");
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}

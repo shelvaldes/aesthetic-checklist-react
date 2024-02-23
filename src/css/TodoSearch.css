@@ -1,0 +1,36 @@
+input,
+textarea {
+  border: none;
+  outline: none; /* Quita el contorno al hacer clic */
+  padding: 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+input::placeholder {
+  color: #A2B8CC; /* El color deseado para tu placeholder */
+  opacity: 1;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  height: 47px;
+}
+
+.search-input {
+    position: absolute;
+    padding: 16px 16px 16px 32px;
+    width: 100%;
+}
+
+.search-icon {
+  position: relative;
+  left: 10px; /* Ajusta según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* Ajusta el tamaño del icono según sea necesario */
+  height: 16px;
+  pointer-events: none; /* Esto hace que el clic en el icono no afecte la funcionalidad del input */
+  z-index: 10;
+}

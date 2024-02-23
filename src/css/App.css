@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary: #EB7272;
+  --shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  --border-radius: 16px;
+}
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Estilos para tablet y desktop */
+@media (min-width: 431px) {
+  .App {
+    align-items: flex-start;
+  }
+  .main {
+    max-width: 400px; /* O el valor que mejor se adapte */
+    min-height: calc(100vh - 200px); /* O la altura que desees */
+    margin-left: auto; /* Centrar el contenedor si es menor que el ancho de la ventana */
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: #f3f3f3;
+    border-radius: 32px;
+    box-shadow: 2px 4px 10.3px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  body {
+    background-image: url("../assets/bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #324961;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
