@@ -7,31 +7,45 @@
 
 .todo-item {
   background-color: #fff;
-  padding: 16px;
+  /* padding: 16px; */
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   display: flex;
-  gap: 16px;
   font-size: 12px;
+  min-height: 48px;
 }
 
-.todo-item.unchecked::before {
-  content: url("../assets/icons/ico-unchecked.svg");
-  position: relative;
-  /* top: 2px; */
+.btn-check,
+.btn-delete {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center;
+  margin-top: 4px;
+}
+
+.todo-item.unchecked > .btn-check {
+  background-image: url("../assets/icons/ico-unchecked.svg");
+}
+
+.todo-item.checked > .btn-check {
+    background-image: url("../assets/icons/ico-checked.svg");
+}
+
+.todo-item.checked {
+    background-color: #E1E1E1;
+    color: #A2B8CC;
+    text-decoration:line-through
 }
 
 .todo-item p {
   flex-grow: 1; /* El texto ocupa el espacio disponible */
+  padding: 16px 0px;
 }
 
-.btn-delete {
-  margin-left: auto; /* El botón se alinea a la derecha */
-}
+
 
 .btn-delete {
   background-image: url("../assets/icons/ico-delete.svg");
-  width: 16px;
-  height: 16px;
   /* margin-top: 2px; */
 }
