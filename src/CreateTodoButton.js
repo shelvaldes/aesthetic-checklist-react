@@ -2,7 +2,12 @@ import './css/CreateTodoButton.css'
 
 function CreateTodoButton() {
     return (
-      <button className='btn-add'/>
+      <button 
+      className='btn-add'
+      onClick={ 
+        () => console.log("miau")
+      }
+      />
     )
   }
 

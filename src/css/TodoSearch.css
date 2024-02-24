@@ -6,6 +6,10 @@ textarea {
   box-shadow: var(--shadow);
 }
 
+input:not(:placeholder-shown) {
+  color: #324961;
+}
+
 input:focus,
 textarea:focus {
   outline-color: var(--primary);

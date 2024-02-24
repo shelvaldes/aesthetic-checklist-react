@@ -16,20 +16,41 @@
 }
 
 .btn-check,
+.btn-uncheck,
 .btn-delete {
   width: 40px;
   height: 40px;
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center center;
   margin-top: 4px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.todo-item.unchecked > .btn-check {
+/* .todo-item > .btn-check {
   background-image: url("../assets/icons/ico-unchecked.svg");
+  color: #A2B8CC;
+} */
+
+.btn-uncheck {
+  fill: #A2B8CC;
 }
 
-.todo-item.checked > .btn-check {
+/* .todo-item.checked > .btn-check {
     background-image: url("../assets/icons/ico-checked.svg");
+    color: var(--primary);
+} */
+
+.btn-check {
+  fill: var(--primary);
+}
+
+.btn-delete {
+  /* background-image: url("../assets/icons/ico-delete.svg"); */
+  fill: #75808B;
 }
 
 .todo-item.checked {
@@ -44,8 +65,3 @@
 }
 
 
-
-.btn-delete {
-  background-image: url("../assets/icons/ico-delete.svg");
-  /* margin-top: 2px; */
-}
