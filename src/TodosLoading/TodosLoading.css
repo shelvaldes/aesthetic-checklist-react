@@ -17,6 +17,7 @@
 .skeleton-btn {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .skeleton-subtitle {
@@ -32,11 +33,15 @@
 
 .skeleton-todoitem {
   width: 100%;
-  padding: 16px;
+  height: 49px;
+  padding: 16px 12px;
+  border-radius: var(--border-radius);
   background-color: white;
+  box-shadow: var(--shadow);
   display: flex;
   gap: 16px;
 }
+
 
 .skeleton-icon-rose,
 .skeleton-icon-gray {
@@ -76,7 +81,6 @@
 }
 
 .skeleton-title,
-.skeleton-subtitle,
 .skeleton-text,
 .skeleton-icon-gray {
   animation: shimmer 2s infinite linear;
@@ -86,6 +90,7 @@
 }
 
 .skeleton-btn,
+.skeleton-subtitle,
 .skeleton-icon-rose {
   animation: shimmer 2s infinite linear;
   background: linear-gradient(to right, #FBB1B1 8%, #FCC7C7 18%, #FBB1B1 33%);
