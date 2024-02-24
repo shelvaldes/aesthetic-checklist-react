@@ -13,3 +13,7 @@ function EmptyTodos() {
 }
 
 export { EmptyTodos };
+
+//código para arreglar el bug
+// {((!loading && totalToDos == 0)) && <p>Crea tu primer Todo</p>}        
+// {((!loading && searchTodos == 0 && totalToDos > 0)) && <p>No hay coincidencias</p>}
