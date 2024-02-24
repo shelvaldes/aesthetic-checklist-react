@@ -8,16 +8,15 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
 :root {
   --primary: #EB7272;
   --shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   --border-radius: 16px;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
-  color: #324961;
 }
 
 .App {
@@ -55,10 +54,11 @@ body {
   }
 
   body {
-    background-image: url("./bg.webp");
+    background-image: url("../assets/bg.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: #324961;
   }
 }
 
@@ -72,5 +72,4 @@ button {
 
 button:focus {
   outline-color: var(--primary);
-  border-radius: var(--border-radius);
 }
