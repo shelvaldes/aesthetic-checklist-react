@@ -54,7 +54,7 @@ body {
   }
 
   body {
-    background-image: url("../assets/bg.webp");
+    background-image: url("./assets/bg.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
