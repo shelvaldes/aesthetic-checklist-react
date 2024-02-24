@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/TodoSearch.css'
-import { ReactComponent as SearchIcon } from './assets/icons/ico-search.svg'
+import './TodoSearch.css'
+import { ReactComponent as SearchIcon } from './ico-search.svg'
 
 function TodoSearch({
   searchValue,

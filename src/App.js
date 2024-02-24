@@ -1,12 +1,12 @@
 import React from 'react';
-import './css/App.css';
-import './css/fonts.css'
-import './css/header.css'
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
-import { CreateTodoButton } from './CreateTodoButton';
+import './assets/App.css';
+import './assets/fonts.css'
+import './assets/header.css'
+import { TodoCounter } from './TodoCounter/TodoCounter';
+import { TodoSearch } from './TodoSearch/TodoSearch';
+import { TodoList } from './TodoList/TodoList';
+import { TodoItem } from './TodoList/TodoItem';
+import { CreateTodoButton } from './CreateTodoButton/CreateTodoButton';
 
 // const defaultTodos = [
 //   { text: 'Dar amor al gatito', completed: true },

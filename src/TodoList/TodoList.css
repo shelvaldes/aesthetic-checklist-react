@@ -30,26 +30,15 @@
   justify-content: center;
 }
 
-/* .todo-item > .btn-check {
-  background-image: url("../assets/icons/ico-unchecked.svg");
-  color: #A2B8CC;
-} */
-
 .btn-uncheck {
   fill: #A2B8CC;
 }
-
-/* .todo-item.checked > .btn-check {
-    background-image: url("../assets/icons/ico-checked.svg");
-    color: var(--primary);
-} */
 
 .btn-check {
   fill: var(--primary);
 }
 
 .btn-delete {
-  /* background-image: url("../assets/icons/ico-delete.svg"); */
   fill: #75808B;
 }
 

@@ -1,6 +1,6 @@
-import { ReactComponent as CheckSVG } from './ico-checked.svg';
-import { ReactComponent as UncheckSVG } from './ico-unchecked.svg';
-import { ReactComponent as DeleteSVG } from './ico-delete.svg';
+import { ReactComponent as CheckSVG } from './svg/ico-checked.svg';
+import { ReactComponent as UncheckSVG } from './svg/ico-unchecked.svg';
+import { ReactComponent as DeleteSVG } from './svg/ico-delete.svg';
 
 const iconTypes = {
     // Alternativa para manejar el color desde JS

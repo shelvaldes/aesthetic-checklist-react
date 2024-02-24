@@ -1,0 +1,5 @@
+.btn-add {
+    background-image: url('./CreateTodoButton.svg');
+    width: 40px; 
+    height: 40px;
+}

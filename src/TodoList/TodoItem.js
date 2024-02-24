@@ -1,6 +1,6 @@
-import { CompleteIcon } from './CompleteIcon';
-import { UncompleteIcon } from './UncompleteIcon';
-import { DeleteIcon } from './DeleteIcon';
+import { CompleteIcon } from './icons/CompleteIcon';
+import { UncompleteIcon } from './icons/UncompleteIcon';
+import { DeleteIcon } from './icons/DeleteIcon';
 
 function TodoItem(props) {
   return (
