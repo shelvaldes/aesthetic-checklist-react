@@ -13,10 +13,31 @@ const iconTypes = {
     "delete": <DeleteSVG />,
 }
 
-function TodoIcon({type, onClick}) {
+// Mapeo de tipos de iconos a etiquetas accesibles
+const ariaLabels = {
+    "check": "Marcar como completado",
+    "uncheck": "Marcar como no completado",
+    "delete": "Eliminar tarea",
+};
+
+function TodoIcon({ type, onClick }) {
     // color como prop
+
+    // Manejador de eventos de teclado
+    const handleKeyDown = (event) => {
+        // Activa onComplete si se presiona Enter o Espacio
+        if (event.key === 'Enter' || event.key === ' ') {
+            onClick();
+        }
+    };
+
     return (
         <span
+            tabIndex="0"
+            role="button"
+            aria-label={ariaLabels[type]}
+            onKeyDown={handleKeyDown}
+
             className={`btn-${type}`}
             onClick={onClick}
         >

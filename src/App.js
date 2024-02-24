@@ -11,6 +11,8 @@ import { CreateTodoButton } from './CreateTodoButton/CreateTodoButton';
 // const defaultTodos = [
 //   { text: 'Dar amor al gatito', completed: true },
 //   { text: 'Aplicar a vacantes', completed: false },
+//   { text: 'Mejorar la accesibilidad de la aplicación', completed: false },
+//   { text: 'Conseguir novio', completed: false },
 //   { text: 'Estudiar React', completed: false },
 //   { text: 'Usar estados derivados en React. Este sería el ejemplo de un texto largo.', completed: true },
 // ]

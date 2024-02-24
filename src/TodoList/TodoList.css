@@ -27,6 +27,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+.btn-check:focus,
+.btn-uncheck:focus,
+.btn-delete:focus {
+  outline-color: var(--primary);
 }
 
 .btn-uncheck {

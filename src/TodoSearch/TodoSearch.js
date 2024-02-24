@@ -13,6 +13,7 @@ function TodoSearch({
       <input
         className='search-input'
         placeholder="Búsqueda"
+        aria-label="Búsqueda"
         value={searchValue}
         onChange={(event)=> {
           setSearchValue(event.target.value);
