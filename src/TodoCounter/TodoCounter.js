@@ -8,7 +8,7 @@ function TodoCounter({ total, completed }) {
       </h2>
       :
       <h2>
-        {completed}/{total} tareas completadas
+        {completed}/{total} completadas
       </h2>
   )
 

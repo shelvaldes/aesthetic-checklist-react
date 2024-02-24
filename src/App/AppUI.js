@@ -5,8 +5,8 @@ import { TodoItem } from '../TodoList/TodoItem';
 import { CreateTodoButton } from '../CreateTodoButton/CreateTodoButton';
 
 import { TodosLoading } from '../TodosLoading/TodosLoading';
-import { TodosError } from '../TodosError/TodosError';
-import { EmptyTodos } from '../EmptyTodos/EmptyTodos';
+import { TodosError } from '../EmptyAndError/TodosError';
+import { EmptyTodos } from '../EmptyAndError/EmptyTodos';
 
 function AppUI({
     loading,
@@ -34,7 +34,7 @@ function AppUI({
 
                 <div className="header-container">
                     <div className='header-subcontainer'>
-                        <h1>Pendientes</h1>
+                        <h1>Tareas</h1>
                         <CreateTodoButton />
                     </div>
                     <TodoCounter
@@ -49,7 +49,7 @@ function AppUI({
                 />
 
                 <TodoList>
-                    {loading && <TodosLoading />}
+                    {/* {loading && <TodosLoading />} */}
                     {error && <TodosError />}
                     {(!loading && searchedTodos.length === 0) && <EmptyTodos />} 
 
@@ -62,6 +62,7 @@ function AppUI({
                             onDelete={() => deleteTodo(todo.text)}
                         />
                     ))}
+
 
                 </TodoList>
 
