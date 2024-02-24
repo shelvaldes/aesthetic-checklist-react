@@ -7,7 +7,6 @@
 
 .todo-item {
   background-color: #fff;
-  /* padding: 16px; */
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   display: flex;
