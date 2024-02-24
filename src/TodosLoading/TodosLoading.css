@@ -1,0 +1,94 @@
+.skeleton-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skeleton-container * {
+  border-radius: 100px;
+}
+
+.skeleton-title {
+  height: 24px;
+  width: 60%;
+}
+
+.skeleton-btn {
+  width: 20px;
+  height: 20px;
+}
+
+.skeleton-subtitle {
+  width: 76px;
+  height: 16px;
+}
+
+.skeleton-todolist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeleton-todoitem {
+  width: 100%;
+  padding: 16px;
+  background-color: white;
+  display: flex;
+  gap: 16px;
+}
+
+.skeleton-icon-rose,
+.skeleton-icon-gray {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.skeleton-text {
+  width: 120px;
+  height: 16px;
+}
+
+.skeleton-spacer {
+  width: 100%;
+}
+
+.skeleton-title,
+.skeleton-text,
+.skeleton-icon-gray {
+  background-color: var(--skeleton-gray);
+}
+
+.skeleton-btn,
+.skeleton-icon-rose,
+.skeleton-subtitle {
+  background-color: var(--skeleton-rose);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton-title,
+.skeleton-subtitle,
+.skeleton-text,
+.skeleton-icon-gray {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(to right, #e0e0e0 8%, #b8b8b8 18%, #e0e0e0 33%);
+  background-size: 800px 104px;
+  position: relative;
+}
+
+.skeleton-btn,
+.skeleton-icon-rose {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(to right, #FBB1B1 8%, #FCC7C7 18%, #FBB1B1 33%);
+  background-size: 800px 104px;
+  position: relative;
+}

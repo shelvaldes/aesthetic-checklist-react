@@ -9,18 +9,26 @@ html {
 }
 
 body {
+  background-image: url("./assets/bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #324961;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
 }
 
 :root {
-  --primary: #EB7272;
+  --primary: #eb7272;
   --shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   --border-radius: 16px;
+
+  --skeleton-gray: #E1E1E1;
+  --skeleton-rose: #FCC7C7;
 }
 
 .App {
-  width: 100vw;
+  /* width: 100vw; */
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -51,14 +59,6 @@ body {
     margin-bottom: 100px;
     border-radius: 32px;
     box-shadow: 2px 4px 10.3px 0px rgba(0, 0, 0, 0.25);
-  }
-
-  body {
-    background-image: url("../assets/bg.webp");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #324961;
   }
 }
 
