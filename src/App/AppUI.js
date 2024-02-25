@@ -5,6 +5,8 @@ import { TodoList } from '../TodoList/TodoList';
 import { TodoItem } from '../TodoList/TodoItem';
 import { CreateTodoButton } from '../CreateTodoButton/CreateTodoButton';
 
+import { Modal } from '../Modal/Modal';
+
 import { TodosLoading } from '../TodosLoading/TodosLoading';
 import { TodosError } from '../EmptyAndError/TodosError';
 import { EmptyTodos } from '../EmptyAndError/EmptyTodos';
@@ -19,6 +21,7 @@ function AppUI() {
         searchedTodos,
         completeTodo,
         deleteTodo,
+        openModal,
     } = useContext(TodoContext);
 
     if (loading) {
@@ -58,6 +61,13 @@ function AppUI() {
                         />
                     ))}
                 </TodoList>
+
+                {openModal && (
+                    <Modal>
+                        miau
+                    </Modal>
+                )}
+
             </div>
         </div>
     );

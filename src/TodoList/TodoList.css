@@ -19,8 +19,6 @@
 .btn-delete {
   width: 40px;
   height: 40px;
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-position: center center;
   margin-top: 4px;
   flex-grow: 0;
   flex-shrink: 0;
@@ -28,6 +26,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 .btn-check:focus,

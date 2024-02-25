@@ -16,15 +16,20 @@ body {
   color: #324961;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
+  /* position: relative; */
 }
 
 :root {
   --primary: #eb7272;
   --shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  --shadow2: 0px 10px 40px 0px rgba(0, 0, 0, 0.37);
   --border-radius: 16px;
+  --border-radius2: 32px;
 
-  --skeleton-gray: #E1E1E1;
-  --skeleton-rose: #FCC7C7;
+  --skeleton-gray: #e1e1e1;
+  --skeleton-rose: #fcc7c7;
+
+  --bg: #f3f3f3;
 }
 
 .App {
@@ -42,7 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  background-color: #f3f3f3;
+  background-color: var(--bg);
 }
 
 /* Estilos para tablet y desktop */
@@ -57,7 +62,7 @@ body {
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    border-radius: 32px;
+    border-radius: var(--border-radius2);
     box-shadow: 2px 4px 10.3px 0px rgba(0, 0, 0, 0.25);
   }
 }
@@ -72,4 +77,37 @@ button {
 
 button:focus {
   outline-color: var(--primary);
+}
+
+.button-primary {
+  background: var(--primary);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  border: none;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  color: #324961;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--primary);
+}
+
+input::placeholder {
+  color: #a2b8cc; /* El color deseado para tu placeholder */
+  opacity: 1;
 }
