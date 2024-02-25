@@ -24,13 +24,21 @@ function TodoProvider({ children }) {
         }
     )
 
+    const addTodo = (text) => {
+        const newTodos = [...todos];
+        newTodos.push({
+            text,
+            completed: false,
+        });
+        saveTodos(newTodos);
+    }
+
     const completeTodo = (text) => {
         const todoIndex = todos.findIndex((todo) => todo.text === text);
         const newTodos = [...todos];
         newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
         saveTodos(newTodos);
     };
-
 
     const deleteTodo = (text) => {
         const newTodos = [...todos];
@@ -55,6 +63,7 @@ function TodoProvider({ children }) {
             deleteTodo,
             openModal,
             setOpenModal,
+            addTodo
         }}>
             {children}
         </TodoContext.Provider>
