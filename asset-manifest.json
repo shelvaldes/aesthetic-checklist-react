@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/aesthetic-checklist-react/static/css/main.2a98006d.css",
+    "main.js": "/aesthetic-checklist-react/static/js/main.86049115.js",
+    "static/media/bg.webp": "/aesthetic-checklist-react/static/media/bg.9f40ce5bd0abe87a0b40.webp",
+    "static/media/Inter-Bold.ttf": "/aesthetic-checklist-react/static/media/Inter-Bold.0eaf807b1cf0eceabe0f.ttf",
+    "static/media/Inter-Regular.ttf": "/aesthetic-checklist-react/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
+    "static/media/Poppins-Bold.ttf": "/aesthetic-checklist-react/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/broken.svg": "/aesthetic-checklist-react/static/media/broken.4be51be81dd9af235827f43b580617f8.svg",
+    "static/media/note.svg": "/aesthetic-checklist-react/static/media/note.f391a2c8916cac875c72088b1345fde9.svg",
+    "index.html": "/aesthetic-checklist-react/index.html",
+    "static/media/ico-delete.svg": "/aesthetic-checklist-react/static/media/ico-delete.ce6ad258e53fed78ee56fbb8199cb076.svg",
+    "static/media/CreateTodoButton.svg": "/aesthetic-checklist-react/static/media/CreateTodoButton.a90c6822f66e11e76d52.svg",
+    "static/media/ico-checked.svg": "/aesthetic-checklist-react/static/media/ico-checked.d397954a069b59e688df426a87cfdf4f.svg",
+    "static/media/ico-unchecked.svg": "/aesthetic-checklist-react/static/media/ico-unchecked.638fbbf399a5d4ab619e3ea5f2af8e88.svg",
+    "static/media/ico-search.svg": "/aesthetic-checklist-react/static/media/ico-search.d4371046c61e4ad92189f1a3954ee7db.svg",
+    "static/media/close.svg": "/aesthetic-checklist-react/static/media/close.e1ecaaf34f7bce54a32e75f3b3605e0e.svg",
+    "main.2a98006d.css.map": "/aesthetic-checklist-react/static/css/main.2a98006d.css.map",
+    "main.86049115.js.map": "/aesthetic-checklist-react/static/js/main.86049115.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a98006d.css",
+    "static/js/main.86049115.js"
+  ]
+}
